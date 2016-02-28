@@ -1,7 +1,7 @@
 # AsyncSegues
-An example to perform segues combined with async data loading
+An example to perform segues combined with async data loading.
 
-Use `func performSegueWithIdentifier(segueIdentifier:, sender:, prepareBlock:)` after the data loading process is complete. In `prepareBlock` you should put the same code you would in `prepareForSegue:` without the need to check the identity of the segue.
+Use `func performSegueWithIdentifier(segueIdentifier:, sender:, prepareBlock:)` after the data loading process is complete. In `prepareBlock` you should put the same code you would in `prepareForSegue:`, but without the need to check the identity of the segue.
 
 ##Example
 
@@ -34,6 +34,6 @@ func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
 ```
 
-This block will also trap local variables, including the recently loaded data model object so there's no need to keep a reference outside of this scope.
+This block will also trap local variables, including a recently loaded data model object, so there's no need to keep a reference outside of this scope.
 
 __Pull requests and comments are appreciated__
