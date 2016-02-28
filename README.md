@@ -1,7 +1,7 @@
 # AsyncSegues
 An example to perform segues combined with async data loading
 
-Use `func performSegueWithIdentifier(segueIdentifier:, sender:, prepareBlock:)` after the data loading process is complete. In `prepareBlock` you should put the same code you would in `prepareForSegue:` but there would be no need to check the particular segue.
+Use `func performSegueWithIdentifier(segueIdentifier:, sender:, prepareBlock:)` after the data loading process is complete. In `prepareBlock` you should put the same code you would in `prepareForSegue:` without the need to check the identity of the segue.
 
 ##Example
 
